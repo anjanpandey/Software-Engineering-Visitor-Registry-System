@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="transfer_report" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminApplication.AdminController">
+   <children>
+      <Button fx:id="generate_report" layoutX="115.0" layoutY="237.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="140.0" prefWidth="270.0" text="GENERATE REPORT" textFill="#0fa443">
+         <effect>
+            <DropShadow color="#1f8035" spread="0.4" />
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="transfer_email" layoutX="541.0" layoutY="237.0" mnemonicParsing="false" onAction="#generateMailingList" prefHeight="140.0" prefWidth="270.0" text="GENERATE MAILING LIST" textFill="#5e1d86">
+         <effect>
+            <DropShadow color="#38158a" spread="0.4" />
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="353.0" layoutY="94.0" prefHeight="44.0" prefWidth="263.0" text="ADMIN PLATFORM" textFill="#093094">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

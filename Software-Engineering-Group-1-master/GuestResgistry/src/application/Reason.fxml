@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReasonController">
+   <top>
+      <AnchorPane opacity="0.6" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: maroon;" BorderPane.alignment="CENTER">
+         <children>
+            <ProgressBar layoutX="174.0" layoutY="30.0" prefHeight="20.0" prefWidth="384.0" progress="1.0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></ProgressBar>
+            <Label layoutX="45.0" layoutY="32.0" text="YOUR PROGRESS" textFill="#ebe2e2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+   <left>
+      <AnchorPane opacity="0.32" prefHeight="159.0" prefWidth="43.0" style="-fx-background-color: maroon;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane opacity="0.32" prefHeight="322.0" prefWidth="42.0" style="-fx-background-color: maroon;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane opacity="0.6" prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: maroon;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="submit_btn" layoutX="476.0" layoutY="4.0" mnemonicParsing="false" onAction="#SubmitButton" prefHeight="54.0" prefWidth="82.0" text="SUBMIT">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="home_btn" layoutX="372.0" layoutY="5.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="87.0" text="HOME">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="back_btn" layoutX="271.0" layoutY="5.0" mnemonicParsing="false" onAction="#backScene" prefHeight="52.0" prefWidth="87.0" text="BACK">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <Pane fx:id="third_body" prefHeight="253.0" prefWidth="515.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="32.0" />
+            <Label fx:id="reason_label" layoutX="14.0" layoutY="22.0" text="Why are you travelling?">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Reason" layoutX="14.0" layoutY="64.0" prefHeight="52.0" prefWidth="220.0" promptText="Select One">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></ComboBox>
+            <Label fx:id="party_label" layoutX="17.0" layoutY="139.0" text="How many people are travelling with you?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Party" layoutX="14.0" layoutY="168.0" prefHeight="44.0" prefWidth="180.0" promptText="Enter a number" />
+            <Label fx:id="email_label" layoutX="17.0" layoutY="252.0" text="Are you interested to learn more about Monroe and West Monroe?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbYes" layoutX="16.0" layoutY="283.0" mnemonicParsing="false" text="YES, I LOVE TO">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbNo" layoutX="15.0" layoutY="320.0" mnemonicParsing="false" text="NO, I AM GOOD" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="Email" layoutX="17.0" layoutY="387.0" prefHeight="39.0" prefWidth="477.0" promptText="Enter your email address" />
+            <Label fx:id="email_pop_label" layoutX="17.0" layoutY="355.0" text="Please provide your email address.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Party_error" layoutX="17.0" layoutY="222.0" />
+            <Label fx:id="Email_error" layoutX="17.0" layoutY="437.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

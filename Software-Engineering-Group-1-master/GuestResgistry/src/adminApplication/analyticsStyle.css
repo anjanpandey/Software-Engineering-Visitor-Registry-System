@@ -1,0 +1,100 @@
+
+
+#mainBody {
+	-fx-background-color: linear-gradient(to bottom, #c2e59c, #64b3f4);
+}
+
+#back_btn:hover {
+	 -fx-background-color:#FFFF00;
+}
+
+#back_btn{
+	
+	-fx-background-color: linear-gradient(#CCCC00, #999900);
+    -fx-text-fill: #654b00;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+
+#filterCity:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#filterCountry:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#filterState:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#refreshButton {
+	
+	-fx-background-color: linear-gradient(#2c539e, #2c539e);
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+#importButton {
+	
+	-fx-background-color: linear-gradient(#73880a, #73880a);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+	
+}
+
+#clearButton {
+	
+	-fx-background-color: linear-gradient(#ffaf4b, #ff920a);
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+#exportButton {
+	
+	-fx-background-color: linear-gradient(#73880a, #73880a);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+	
+}
+
+#emailButton {
+	
+	-fx-background-color: linear-gradient(#73880a, #73880a);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+	
+}

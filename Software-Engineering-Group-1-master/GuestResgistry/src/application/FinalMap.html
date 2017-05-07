@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Google Maps Javascript API v3 Example: Add Marker with
+	open infowindow on map click</title>
+<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuT9VzPqnYSaB5Os0U4mkI8C7CiuFzwao"></script>
+<!-- <script type="text/javascript" src="scripts/downloadxml.js"></script> -->
+<style type="text/css">
+html, body {
+	height: 100%;
+	width: 100%;
+}
+#floating-panel {
+	position: absolute;
+	background-color: black;
+	top: 5%;
+	right: 40%;
+	z-index: 5;
+	padding: 7px;
+	text-align: center;
+	font-family: 'Roboto', 'sans-serif';
+	line-height: 30px;
+	padding: 1% 1% 1% 1%;
+	opacity: .68;
+}
+#branding {
+	position: absolute;
+	right: 1%;
+	top: 0px;
+	opacity: 0.5;
+}
+</style>
+<script type="text/javascript">
+	//<![CDATA[
+	//Stress tested to 1000 pins
+	// global "map" variable
+	var map = null;
+	var marker = null;
+	var nums = 0; //This will be returned as the location of the user, only records the last pin placed.
+	var latitude = 39.062214; //Latitude the map starts at
+	var longitude = -97.227689; //Longitude the map starts at
+	var holder1 = 39.062214;
+	var holder2 = -97.227689;
+	var latLongArray = [];
+	var i = 0;
+	var j = 0;
+	var tester = "";
+	var locationOfPin = "";
+	var markers = [];
+	var infowindow = new google.maps.InfoWindow({
+		size : new google.maps.Size(150, 50)
+	});
+	
+	// A function to create the marker and set up the event window function 
+	function createUserMarker(latlng) {
+
+		if(marker != null){
+			marker.setMap(null);
+		}
+		
+		nums = latlng;
+		marker = new google.maps.Marker({
+			position : latlng,
+			map : map,
+			icon : "SmallUserMarker.png",
+			animation : google.maps.Animation.DROP,
+			zIndex : Math.round(latlng.lat() * -100000) << 5
+		});
+
+		google.maps.event.trigger(marker, 'click');
+		nums = latlng;
+
+		//markers[i] = marker;
+		//i = i + 1;
+
+		return marker;
+	}
+	
+	// A function to create the marker and set up the event window function 
+	function createMarker(latlng) {
+		nums = latlng;
+		var marker = new google.maps.Marker({
+			position : latlng,
+			map : map,
+			icon : "ImprovedSmallNewMarker.png",
+			animation : google.maps.Animation.DROP,
+			zIndex : Math.round(latlng.lat() * -100000) << 5
+		});
+		google.maps.event.trigger(marker, 'click');
+		nums = latlng;
+		//markers[i] = marker;
+		//i = i + 1;
+		return marker;
+	}
+	
+	//Sets focus on Asia
+	function getAsianLatandLong(){
+		
+		latitude = app.getAsianLat(); //Latitude the map starts at
+	    longitude = app.getAsianLong(); //Longitude the map starts at
+		initialize();
+	}
+	
+	//Sets focus on Africa
+	function getAfricanLatandLong(){
+		
+		latitude = app.getAfricaLat(); //Latitude the map starts at
+	    longitude = app.getAfricaLong(); //Longitude the map starts at
+		initialize();
+	}
+	
+	//Sets focus on Europe
+	function getEuropeanLatandLong(){
+		
+		latitude = app.getEuropeLat(); //Latitude the map starts at
+	    longitude = app.getEuropeLong(); //Longitude the map starts at
+		initialize();
+	}
+	
+	//Sets focus on the USA
+	function getUSALatandLong(){
+		
+		latitude = holder1; //Latitude the map starts at
+	    longitude = holder2; //Longitude the map starts at
+		initialize();
+	}
+	/*Populates the map by reading from an ArrayList of Strings found in Java.
+	  This then calls the createMarker method for every lat-long pair it recieves.
+	  Note that it must create a google.LatLng object for every pin.*/
+	function populateJSMap() {
+		j = 0;
+		i = 0;
+		temp = app.getSize();
+		/*temp = 4;
+		latLongArray[0] = 34.16181816123038;
+		latLongArray[1] = -98.4375;
+		latLongArray[2] = 36.4566360115962;
+		latLongArray[3] = -102.83203125;*/
+		while (j < temp) {
+			latLongArray[j] = app.getString(j);
+			j++;
+		}
+		j = 0;
+		while (j < temp) {
+			myLatLng = new google.maps.LatLng({
+				lat : latLongArray[j],
+				lng : latLongArray[j + 1]
+			});
+			marker = createMarker(myLatLng);
+			j = j + 2;
+		}
+		j = 0;
+		i = 0;
+	}
+	/*A function that calls all methods needed to drop pins*/
+	function DropUserPin(message) {
+		createUserMarker(message);
+	}
+	/*For testing purposes*/
+	function testCallJavaFX(message2) {
+		app.testCall(message2);
+	}
+	/*Gives JavascriptComm.java (called "app" here, which is defined in MapController) the location of the last pin that was dropped*/
+	function giveInfo() {
+		app.callFromJavascript(nums);
+	}
+	/*This is used to drop a pin when a zip code, city, etc is typed in the text box.*/
+	function geocodeAddress(geocoder, resultsMap) {
+		var address = document.getElementById('address').value;
+		if (address == "" && !marker) {
+			alert('Please Enter your location');
+		} else {
+			geocoder.geocode(
+					{
+						'address' : address
+					},
+					function(results, status) {
+						if (status === 'OK') {
+							resultsMap.setCenter(results[0].geometry.location);
+							marker = new google.maps.Marker({
+								map : resultsMap,
+								animation : google.maps.Animation.DROP,
+								draggable : true,
+								icon : "SmallUserMarker.png",
+								position : results[0].geometry.location
+							});
+							nums = results[0].geometry.location;
+						} else {
+							alert('Geocode was not successful for the following reason: '
+									+ status);
+						}
+						map.setZoom(9);
+					});
+		}
+	}
+	function initialize() {
+		// create the map
+		var myOptions = {
+			zoom : 5,
+			center : new google.maps.LatLng(latitude, longitude),
+			mapTypeControl : true,
+			mapTypeControlOptions : {
+				style : google.maps.MapTypeControlStyle.DROPDOWN_MENU
+			},
+			navigationControl : true,
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		}
+		map = new google.maps.Map(document.getElementById("map_canvas"),
+				myOptions);
+		//Add "click on map" listener
+		google.maps.event.addListener(map, 'click', function(event) {
+			DropUserPin(event.latLng);
+		});
+		//Add manual input (text box) listener
+		var geocoder = new google.maps.Geocoder;
+		document.getElementById('submit').addEventListener('click', function() {
+			geocodeAddress(geocoder, map);
+		});
+	}
+	//]]>
+</script>
+
+</head>
+<body style="margin: 0px; padding: 0px;" onload="initialize()">
+
+	<form>
+		<div id="floating-panel">
+			<input id="address" type="textbox" value=""
+				placeholder="Find By Zip-Code"> <input id="submit"
+				class="send" type="button" value="Locate">
+		</div>
+	</form>
+	<table border="1">
+		<tr>
+			<td>
+				<div id="map_canvas" style="width: 1900px; height: 945px"></div> <!-- This is where you change the size of the map -->
+			</td>
+			<!--         <td valign="top" style="width:150px; text-decoration: underline; color: #4444ff;">  -->
+			<div id="side_bar"></div>
+			</td>
+		</tr>
+	</table>
+	<img src="BrandingImageSmall.png" id="branding"></img>
+
+
+	<script src="http://www.google-analytics.com/urchin.js"
+		type="text/javascript">
+		
+	</script>
+	<script type="text/javascript">
+		_uacct = "UA-162157-1";
+		urchinTracker();
+	</script>
+
+	<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		
+	</script>
+
+
+
+</body>
+</html>

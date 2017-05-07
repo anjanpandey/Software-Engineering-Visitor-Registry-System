@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2017, 6:14:27 PM
+    Author     : admin
+*/
+
+#mainBody {
+    -fx-background-color:linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
+}
+
+
+#nxt_btn:hover {
+    -fx-background-color: #a9ff00; 
+}
+
+#home_btn:hover {
+    -fx-background-color:#ffd65b; 
+}
+
+#back_btn:hover {
+	 -fx-background-color:#FFFF00;
+}
+#nxt_btn {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#home_btn {
+	-fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+#back_btn{
+	
+	 -fx-background-color: linear-gradient(#CCCC00, #999900);
+    -fx-text-fill: #654b00;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+#Hear:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#rbYes:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#rbNo:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#TravelCity:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+#Hear {
+	-fx-font-size: 14px;
+	 -fx-font-weight: bold;
+}
+
+#Hear .list-view .list-cell {
+	-fx-background-color: linear-gradient(to right, #007991, #78ffd6);
+	-fx-font-size: 14px;
+	 -fx-font-weight: bold;
+}
+
+

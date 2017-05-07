@@ -1,0 +1,14 @@
+For the JDBC file to work, you need:
+mySQL downloaded (remember where you download this, as you will need the JAR file from this)
+XAMPP
+
+1. Once you have those two things, open up XAMPP.
+2. Make sure that Skype (or anything running on port 80) is closed or turned off (apache runs on port 80)
+3. Turn on apache and mySQL
+4. Go to you web browser and type 'localhost'.
+5. Click on phpMyAdmin in the top-right corner
+6. This is were you make your DB. The steps on how to do this are self explanatory. (Note: make sure VisitorID is you primary key)
+7. After creating your DB, go to your eclipse project where your JDBC file is located.
+8. Right-click the project folder, go to 'Build Path', and choose 'Add External Files'.
+9. Find where you downloaded mySQL and choose the JAR file.
+10. That should be it. 

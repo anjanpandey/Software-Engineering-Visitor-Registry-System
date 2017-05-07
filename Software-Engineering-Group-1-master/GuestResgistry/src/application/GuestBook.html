@@ -1,0 +1,139 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="form.css">
+<script src="form.js"></script>
+</head>
+<body>
+<div class="container auth">
+    <h1 class="text-center"><center>WELCOME!</center></h1>
+    <div id="big-form" class="well auth-box">
+      <form action = "JSON_Creator.php" method = "post" id = "Form">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Tell Us More About Yourself!</legend>
+
+
+   <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="textinput">First Name:</label>  
+            <div class="">
+              <input id="textinput" name="firstname" class="form-control input-md" type="text">  
+            </div>
+          </div>
+          
+           <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="textinput">Middle Initial:</label>  
+            <div class="">
+              <input id="textinput" name="middleinit" class="form-control input-md" type="text">  
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="textinput">Last Name:</label>
+            <div class="">
+              <input id="textinput" name="lastname" class="form-control input-md" type="text">
+            </div>
+          </div>
+          
+           <!-- Email input-->
+          <div class="form-group">
+            <label class=" control-label" for="emailinput">Email Address:</label>
+            <div class="">
+              <input id="textinput" name="emailinput" class="form-control input-md" type="email">
+            </div>
+          </div>
+          
+              <br>
+           <!-- Number input-->
+          <div class="form-group">
+            <label class=" control-label" for="numberinput">Number in Party:</label>
+            <div class="">
+              <input id="numberinput" name="numberinput" class="form-control input-md" type="number">
+            </div>
+          </div>
+              <br>
+            <!-- Text input-->
+          <div class="form-group">
+            <label class=" control-label" for="textinput">Destination:</label>
+            <div class="">
+              <input id="textinput" name="destinput"  class="form-control input-md" type="text">
+            </div>
+          </div>
+
+    <br>
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class=" control-label" for="selectbasic">Traveling For:</label>
+            <div class="">
+              <select id="selectbasic" name="reason" class="form-control">
+                <option value="1">Business</option>
+                <option value="2">Pleasure</option>
+                <option value="1">Convention</option>
+                <option value="2">Other</option>
+              </select>
+            </div>
+          </div>
+          
+          <br>
+            <!-- Select Basic -->
+          <div class="form-group">
+            <label class=" control-label" for="selectbasic">What brings you here?</label>
+            <div class="">
+              <select id="selectbasic" name="heardfrom" class="form-control">
+                <option value="1">Billboard</option>
+                <option value="2">Interstate Signs</option>
+                <option value="2">Other</option>
+              </select>
+            </div>
+          </div>
+          
+    <br>
+          <!-- Multiple Radios -->
+          <div class="form-group">
+            <label class=" control-label" for="radios">Did you stay overnight in Monroe-West Monroe hotel?</label>
+            <div class="">
+              <div class="radio">
+                <label for="radios-0">
+                  <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+                  Yes
+                </label>
+              </div>
+              <div class="radio">
+                <label for="radios-1">
+                  <input name="radios" id="radios-1" value="2" type="radio">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+
+    <br>
+          <!-- Multiple Checkboxes -->
+          <div class="form-group">
+            <label class=" control-label" for="checkboxes"></label>
+            <div class="">
+              <div class="checkbox">
+                <label for="checkboxes-0">
+                  <input name="checkboxes" id="checkboxes-0" value="1" type="checkbox">
+                  Opt-In for monthly newspaper. 
+                </label>
+              </div>
+               <br>   
+      <!-- Button (Double) -->
+          <div class="form-group">
+            <div class="">
+              <button id="button1id" name="button1id" class="btn btn-success">Submit</button>
+              <button id="button2id" name="button2id" class="btn btn-danger">Exit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  </body>
+  </html>

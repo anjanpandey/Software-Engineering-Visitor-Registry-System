@@ -1,0 +1,25 @@
+
+#AnchorPane{
+    -fx-background-color: linear-gradient(to right, #007991, #78ffd6);
+}
+
+
+#home_btn:hover {
+    -fx-background-color:#ffd65b; 
+}
+
+#home_btn {
+	-fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: linear-gradient(to right, #4ecdc4, #556270);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+	
+}
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainBody" prefHeight="400.0" prefWidth="699.0" stylesheets="@Gratitude.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GratitudeController">
+   <children>
+      <Button fx:id="home_btn" alignment="CENTER" layoutX="307.0" layoutY="185.0" mnemonicParsing="false" onAction="#goHome" prefHeight="80.0" prefWidth="115.0" text="Got it! Thank y'all for coming, and y'all come see us again! Click to go to Home!" wrapText="true" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="307.0" AnchorPane.rightAnchor="277.0" AnchorPane.topAnchor="185.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="176.0" fitWidth="165.0">
+               <image>
+                  <Image url="@tick.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

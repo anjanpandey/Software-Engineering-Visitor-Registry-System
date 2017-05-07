@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="mainBody" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@adminViewForm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminApplication.AdminViewFormController">
+   <bottom>
+      <AnchorPane prefHeight="356.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Update" layoutX="789.0" layoutY="43.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="60.0" prefWidth="171.0" style="-fx-background-color: green;" text="Add Visitor Info">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="Exit" layoutX="479.0" layoutY="43.0" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="60.0" prefWidth="164.0" style="-fx-background-color: yellow;" text="BACK">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane fx:id="FormBody" prefHeight="805.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="City" layoutX="481.0" layoutY="118.0" promptText="City">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="Country" layoutX="481.0" layoutY="183.0" promptText="Country">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="ZipCode" layoutX="762.0" layoutY="183.0" prefHeight="27.0" prefWidth="98.0" promptText="Zip Code">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <ComboBox fx:id="State" layoutX="762.0" layoutY="116.0" prefHeight="43.0" prefWidth="149.0" promptText="State" />
+            <Label layoutX="348.0" layoutY="110.0" text="Visiting from:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label layoutX="117.0" layoutY="260.0" text="Stayed in Monroe / West Monroe Hotel:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <RadioButton fx:id="rbYes" layoutX="492.0" layoutY="260.0" mnemonicParsing="false" text="Yes" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbNo" layoutX="580.0" layoutY="260.0" mnemonicParsing="false" text="No" textFill="WHITE" toggleGroup="$toggleGroup">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></RadioButton>
+            <Label layoutX="360.0" layoutY="335.0" text="Referred via:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <ComboBox fx:id="Reason" layoutX="492.0" layoutY="324.0" prefHeight="49.0" prefWidth="158.0" promptText="Choose One" />
+            <Label layoutX="270.0" layoutY="424.0" text="Destination / Interests:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <TextField fx:id="Destination" layoutX="491.0" layoutY="414.0" prefHeight="47.0" prefWidth="224.0" promptText="Enter City">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label layoutX="357.0" layoutY="503.0" text="Traveling for:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <ComboBox fx:id="Purpose" layoutX="491.0" layoutY="492.0" prefHeight="50.0" prefWidth="178.0" promptText="Choose One" />
+            <Label layoutX="380.0" layoutY="586.0" text="Party size:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <TextField fx:id="Party" layoutX="492.0" layoutY="561.0" prefHeight="49.0" prefWidth="143.0" promptText="Enter a number">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="Email" layoutX="492.0" layoutY="643.0" prefHeight="50.0" prefWidth="479.0" promptText="Email Address">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label layoutX="340.0" layoutY="654.0" text="Email Address:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label fx:id="FnameError" layoutX="74.0" layoutY="41.0" />
+            <Label fx:id="EmailError" layoutX="136.0" layoutY="517.0" />
+            <Label fx:id="PartyError" layoutX="440.0" layoutY="393.0" />
+            <Label fx:id="DestinationError" layoutX="34.0" layoutY="314.0" />
+            <Label fx:id="AddressError" layoutX="74.0" layoutY="137.0" />
+            <Label fx:id="LnameError" layoutX="260.0" layoutY="50.0" />
+            <Label layoutX="127.0" layoutY="54.0" text="Adding New Visitor Information" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,65 @@
+#submit_btn:hover {
+	-fx-background-color: #7FFF00;
+}
+
+#reset_btn:hover {
+	-fx-background-color: #FF6347;
+}
+
+#exit_btn:hover {
+	-fx-background-color: #FF0000;
+}
+
+#home_btn:hover {
+	-fx-background-color: #7FFF00;
+}
+
+#reasonLabel .list-cell {
+	-fx-font-weight: bold;
+	-fx-font-size: 20px;
+}
+
+#purposeLabel .list-cell {
+	-fx-font-weight: bold;
+	-fx-font-size: 20px;
+}
+
+#reasonLabel:hover {
+	-fx-background-color: #7FFFD4;
+}
+
+#reasonLabel .list-cell:hover {
+	-fx-background-color: #7FFFD4;
+}
+
+#purposeLabel:hover {
+	-fx-background-color:#7FFFD4;
+}
+
+#purposeLabel .list-cell:hover {
+	-fx-background-color: #7FFFD4;
+}
+
+#flabel:hover {
+	-fx-background-color: #7FFFD4;
+}
+
+#mlabel:hover {
+	-fx-background-color: #7FFFD4;
+}
+
+#label:hover {
+	-fx-background-color:  #7FFFD4;
+}
+
+#plabel:hover {
+	-fx-background-color:  #7FFFD4;
+}
+
+#elabel:hover {
+	-fx-background-color: #7FFFD4;
+}
+
+#dlabel:hover {
+	-fx-background-color: #7FFFD4;
+}

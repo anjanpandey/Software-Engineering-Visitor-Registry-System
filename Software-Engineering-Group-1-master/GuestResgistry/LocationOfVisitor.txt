@@ -1,0 +1,15 @@
+700 Peavine Creek Rd NE
+Atlanta
+GA
+USA
+types=[street_address],
+ 30322
+Atlanta
+33.797408767572485
+-84.3310546875
+null
+null
+null
+null
+null
+null

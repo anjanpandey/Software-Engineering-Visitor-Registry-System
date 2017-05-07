@@ -1,0 +1,14 @@
+
+
+#visitor {
+	 -fx-background-color: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+#analytics {
+	 -fx-background-color: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+#mainBody {
+	-fx-background-color: linear-gradient(to bottom, #c2e59c, #64b3f4);
+	
+}

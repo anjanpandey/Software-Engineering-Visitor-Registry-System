@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminApplication.VisitorViewController">
+   <children>
+      <TableView fx:id="visitorTable" layoutX="52.0" layoutY="66.0" prefHeight="798.0" prefWidth="1833.0" style="-fx-background-color: yellow;" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="emailColumn" prefWidth="218.0" text="Email" />
+            <TableColumn fx:id="metroColumn" prefWidth="184.0" text="Metro Area" />
+            <TableColumn fx:id="cityColumn" prefWidth="173.0" text="City" />
+            <TableColumn fx:id="stateColumn" prefWidth="76.0" text="State" />
+            <TableColumn fx:id="countryColumn" prefWidth="86.0" text="Country" />
+            <TableColumn fx:id="zipColumn" prefWidth="66.0" text="Zip-Code" />
+            <TableColumn fx:id="partyColumn" prefWidth="87.0" text="# in Party" />
+            <TableColumn fx:id="heardColumn" prefWidth="228.0" text="Refererred by" />
+            <TableColumn fx:id="hotelColumn" prefWidth="72.0" text="Hotel" />
+            <TableColumn fx:id="destinationColumn" prefWidth="133.0" text="Destination" />
+            <TableColumn fx:id="repeatColumn" prefWidth="94.0" text="Repeat Visitor" />
+            <TableColumn fx:id="reasonColumn" minWidth="0.0" prefWidth="112.0" text="Reason" />
+            <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="153.0" text="Date of Visit" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="endDatePicker" layoutX="437.0" layoutY="871.0" prefHeight="27.0" prefWidth="172.0" />
+      <DatePicker fx:id="startDatePicker" layoutX="233.0" layoutY="871.0" prefHeight="27.0" prefWidth="172.0" />
+      <Label layoutX="52.0" layoutY="871.0" text="Showing visitors from">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="deleteButton" layoutX="1567.0" layoutY="884.0" mnemonicParsing="false" onAction="#deleteVisitor" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: red;" text="Delete Visitor" />
+      <Button fx:id="addButton" layoutX="1412.0" layoutY="884.0" mnemonicParsing="false" onAction="#addVisitor" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: green;" text="Add Visitor" />
+      <Label layoutX="411.0" layoutY="871.0" text="to">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="refreshButton" layoutX="631.0" layoutY="871.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="27.0" prefWidth="92.0" text="Refresh Table" />
+      <Button fx:id="back_btn" layoutX="52.0" layoutY="909.0" mnemonicParsing="false" onAction="#goBack" prefHeight="49.0" prefWidth="92.0" style="-fx-background-color: orange;" text="BACK" />
+      <Button fx:id="importButton" layoutX="1251.0" layoutY="884.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="130.0" text="Import from Excel" />
+      <Button fx:id="excelButton" layoutX="1106.0" layoutY="884.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="130.0" text="Export to Excel" />
+      <Button fx:id="emailButton" layoutX="960.0" layoutY="884.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="130.0" text="Create Mailing List" />
+      <Button fx:id="deleteButton" layoutX="1728.0" layoutY="884.0" mnemonicParsing="false" onAction="#deleteAgedData" prefHeight="65.0" prefWidth="157.0" text="Delete Aged Data" />
+      <Button fx:id="helpButton" layoutX="152.0" layoutY="909.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="81.0" text="HELP" />
+   </children>
+</AnchorPane>

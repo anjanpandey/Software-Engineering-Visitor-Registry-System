@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="662.0" stylesheets="@Form.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HotelController">
+   <top>
+      <AnchorPane opacity="0.6" prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <ProgressBar fx:id="Progress_bar" layoutX="157.0" layoutY="34.0" prefHeight="20.0" prefWidth="415.0" progress="0.59" stylesheets="@Form.css">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></ProgressBar>
+            <Label layoutX="38.0" layoutY="36.0" text="YOUR PROGRESS" textFill="#625a9c">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+   <left>
+      <AnchorPane opacity="0.32" prefHeight="173.0" prefWidth="38.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane opacity="0.32" prefHeight="345.0" prefWidth="30.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane opacity="0.6" prefHeight="89.0" prefWidth="600.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="next_btn" layoutX="494.0" layoutY="15.0" mnemonicParsing="false" onAction="#NextButton" prefHeight="61.0" prefWidth="79.0" stylesheets="@Form.css" text="NEXT">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="home_btn" layoutX="400.0" layoutY="15.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="81.0" stylesheets="@Form.css" text="HOME">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="back_btn" layoutX="306.0" layoutY="16.0" mnemonicParsing="false" onAction="#backScene" prefHeight="60.0" prefWidth="81.0" stylesheets="@Form.css" text="BACK">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <Pane fx:id="second_body" prefHeight="200.0" prefWidth="200.0" stylesheets="@Form.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Stay_label" layoutX="14.0" layoutY="26.0" text="Did you stay in Monroe-West Monroe Hotel?">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbYes" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#radioSelect" text="YES">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="radioGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbNo" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#radioSelect" text="NO" toggleGroup="$radioGroup">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="hear_label" layoutX="14.0" layoutY="167.0" text="How did you hear about the Monroe-West Monroe CVB?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Hear" layoutX="14.0" layoutY="203.0" prefHeight="52.0" prefWidth="341.0" promptText="Select One" />
+            <Label fx:id="travel_label" layoutX="14.0" layoutY="279.0" text="Where are you travelling? ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TravelCity" layoutX="14.0" layoutY="316.0" prefHeight="53.0" prefWidth="345.0" promptText="Enter City Name" />
+            <Label fx:id="Destination_error" layoutX="14.0" layoutY="380.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

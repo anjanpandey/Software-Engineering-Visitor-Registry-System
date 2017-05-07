@@ -1,0 +1,110 @@
+<h1> Table of Contents </h1>
+<h2> The Purpose of This Program </h2>
+<p>Basic Overview of Functionality</p>
+<h2> The Map </h2>
+<ul>
+<li>How to Use the Map</li>
+<li>About the Google Map API</li>
+<ul>
+<h2> The Form </h2>
+<ul>
+<li>Details of functionality</li>
+<li>If Problems Arise</li>
+</ul>
+<h2> Implementation Details </h2>
+<h2> The Administrative Platform </h2>
+<ul>
+Visitor View
+<li>Searching for Visitors</li>
+<li>Editing Visitor Information</li>
+<li>Adding Visitor Information</li>
+<li>Deleting Aged Visitor Information</li>
+<li>Importing Information from Excel</li>
+<li>Exporting Information to Excel</li>
+<li>Creating a Mailing List</li>
+</ul>
+<h2> Analytics View </h2>
+<ul>
+<li>Importing Information from Excel</li>
+<li>Exporting Information to Excel</li>
+<li>Creating a Mailing List</li>
+<li>Filtering Data</li>
+<li>Data Views</li>
+</ul>
+
+
+<h2>The Purpose of This Program</h2>
+ 
+ <p>Our team from ULM has worked hard to present an efficient, meaningful program that will aid the MWMCVB in their task of gathering data about where people visit Monroe from. This program contains a map and form designed to take information from visitors and a database portion to store that information. The administrator side can perform analysis of this information, and provides filters (i.e. all visitors that came after this data) to enhance them.</p>
+<h3>The Division of Roles</h3>
+<h4>Section 1</h4>
+ <p>The system is divided up into two separate programs. First there is the Visitor Map Program, this contains both a map and a form. The map displays previous visitor’s locations and takes the location of the current visitor. The form is designed to be “conversational” and lightweight while still taking the crucial analytical information needed to make good marketing decisions.</p>
+ 
+<h4>Section 2</h4>
+ <p>The Administrator Program is designed to take the information given by the map and present it in a meaningful way. This information can be accessed by any computer using the Admin Program.</p>
+ 
+<h2>The Map</h2>
+
+<img src = "MapPicture.png" height="400" width="600">
+
+<h4>Section 1</h4>
+ <p>The Map is the first thing that the user sees and what comes back up when the “home” button is clicked. This map reloads every time it is brought up on the screen. It is designed so that the user may give the location they came from. The user may be as specific as they want to be, down to their home address. This is accomplished by one of three ways. First, if a touchscreen implementation is used, the user may tap an area on the map, in the general area of where they came from. The second way is to use a mouse and click the area they came from on the map. Thirdly, we provide a text box that will allow a user to enter a zip code, upon tapping the “locate” button, a pin will automatically be dropped.</p>
+
+<h3>WalkThrough for Map</h3>
+
+<p>If you are from the United States you have three options:
+1) You can drop a pin (by either touching the location on the map directly or clicking it with the mouse) in the general area that you are from.
+2) You can use the zoom options in the bottom-right corner and drag the map by clicking, holding, and moving the mouse around to zoom into the location that you’re from and drop a pin more accurately.
+3) Enter your zip code in the text area provided at the top and click “locate”
+4) If you are not from the US, we have tried to make it convenient for you to select where you’re from.
+4a) There are three buttons on the bottom of the screen that say things like “I’m from Asia”. These buttons will make the map focus on a different continent. You may then perform 1 or 2. 
+ * If you cannot find your continent on the buttons, you will need to drag the map (click, hold, and move the mouse) until you find where you’re from.
+5) After a red pin has appeared on the map, you may now click “next”. You may change the location of the pin if you wish, all you need to do is drop another pin.
+6) If any problem arises (i.e. no green pins appear) just click the “reload page” button on the bottom of the screen.</p>
+ 
+ 
+<h4>Section 2</h4>
+ <p>This is an instance of a Google map. As such, it must be connected to the internet to work. It also means that it will work on any platform and covers the whole globe: there should never be a time when someone says “I can’t find the country I’m from”. The only thing people might have trouble finding are very small towns. The standard controls of the map are the same as every Google map. There are zoom controls on the bottom-right side, and you may drag or double click the map to either change the locations viewed or zoom, respectively.</p>
+
+<p>Questions</p>
+
+<p>“Can I change the way that the pins on the map look?”
+Unfortunately, no. The picture used is hardcoded into the system and requires changes to the code to do so.
+
+“No pins showed up, what do I do”
+9 times out of 10 this can be fixed by clicking the “reload page” button.
+
+“Do I need to put the pin exactly where I live?”
+Not really, you may place the pin close to where you live. If you live close to Dallas, for instance, but not within the city limits, the system will still recognize that you live in the Dallas area, so no need to be too specific.</p>
+ 
+ 
+<h2>The Form</h2>
+
+<img src = "FormPicture.png" height="400" width="600">
+
+
+<h4>Section 1</h4>
+ <p>Our form is a three-piece series of text boxes and check boxes that allows the MWMCVB to receive detailed information about the user. It is navigated by its Next and Back buttons. The users are not required to fill anything out; they may pick and choose what they decide they want to do. The first thing that the form does is prompt the user to verify his/her location. This is accomplished by taking the city, state, zip code, and country the person selected on the map. Please note, because of the implementation this will only work for those people who live inside the United States. Those who came from other areas of the world will have their location saved and it will show up on both the administrator and visitor maps, however, more detailed information (i.e. city name) will not be saved.</p>
+ 
+<h4>Section 2</h4>
+<p> Problems happen. Most of which can be solved by entering the correct information in the fields. Although we have done our best to make this program as reliable and durable as possible, care should still be taken so that the information stored accurately represents the visitor’s intentions. Red words appearing after a “next” button press mean that the user did not enter this information correctly. We would love to allow anything that the user thought would be valid, for ease of use, but that is simply not an option.</p>
+
+<p>WalkThrough for Form</p>
+
+<p>First you will be greeted by a page prompting you to confirm where you are from. The information does not have to be exact, just close to where you are from. You may change this information if you want to.
+Select “No” if you do not want to give any further information. Otherwise, click “Yes”.
+You will then have a series of questions and pages that ask for information about your trip. Click “Next” to continue, “Home” to abort the process, and “Back” to go back to a previous page.</p>
+
+<p>Questions</p>
+
+<p>“I’m from another country, why was my information not populated automatically?”
+Due to implementation issues this functionality was only given to locations within the United States, your information is still saved, however.
+
+“Why won’t it let me type the word ‘seven’ in?”
+You might be prompted to retype something in a text box, this is because of the way the underlying code works. You will be required to fill out things as the red text asks, but you may always leave it blank if you don’t want to.</p>
+
+<h2>Implementation Details</h2>
+<h4>Section 1</h4>
+ 
+ <p>We recommend a display of resolution 1920x1080p for this implementation. Also, an internet connection is required. Any desktop purchased after 2014 should have ample power to run our system. A touchscreen is recommended, but in no case is it required. A physical keyboard and mouse should be available to the user; we do not recommend an on-screen keyboard. If necessary a laptop will also work, but be mindful of the screen resolution as this was optimized for a 1920x1080p display. The display size shouldn’t matter, but we recommend that the size be at least 24 inches diagonally.</p>
+ <p>Kiosks (whatever computer that the visitors will enter their information) should only run the Visitor Map. The Administrator Program can be run on any modern computer (connected to the Internet) that it is installed on. Please note: your version of Java MUST be up to date to use this program. We have made use of some relatively new technology that requires Oracle’s Java version 8. </p>

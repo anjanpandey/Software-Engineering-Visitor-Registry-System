@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainBody" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@analyticsStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminApplication.AnalyticsController">
+   <children>
+      <SplitPane id="mainBody" dividerPositions="0.3032069970845481" prefHeight="1080.0" prefWidth="1920.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1044.0" prefWidth="488.0">
+               <children>
+                  <FlowPane layoutX="24.0" layoutY="82.0" prefHeight="499.0" prefWidth="545.0">
+                     <children>
+                        <CheckBox fx:id="dateCheck" mnemonicParsing="false" text="Date Range:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></CheckBox>
+                        <GridPane prefHeight="41.0" prefWidth="359.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="19.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="50.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="126.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="2.0" prefWidth="27.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="36.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="118.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Start" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="27.0" prefWidth="49.0" text="End" textAlignment="RIGHT" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="startDatePicker" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <DatePicker fx:id="endDatePicker" prefHeight="25.0" prefWidth="142.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <CheckBox fx:id="areaCheck" mnemonicParsing="false" text="Visiting From:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></CheckBox>
+                        <GridPane prefHeight="30.0" prefWidth="399.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="12.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="125.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="122.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="137.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <MenuButton fx:id="citiesMenuButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="109.0" text="Cities" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></MenuButton>
+                              <MenuButton fx:id="statesMenuButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="States" GridPane.columnIndex="2">
+                                 <contextMenu>
+                                    <ContextMenu fx:id="statesMenu" />
+                                 </contextMenu>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </MenuButton>
+                              <MenuButton fx:id="countriesMenuButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="129.0" text="Countries" GridPane.columnIndex="3">
+                                 <contextMenu>
+                                    <ContextMenu fx:id="countriesMenu" />
+                                 </contextMenu>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </MenuButton>
+                           </children>
+                        </GridPane>
+                        <GridPane prefHeight="237.0" prefWidth="377.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="241.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="136.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <MenuButton fx:id="travelingMenuButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="143.0" text="Reasons" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <contextMenu>
+                                    <ContextMenu fx:id="travelingMenu" />
+                                 </contextMenu>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </MenuButton>
+                              <CheckBox fx:id="travelingCheck" mnemonicParsing="false" text="Traveling for :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="referredCheck" mnemonicParsing="false" text="Referred via:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                              <MenuButton fx:id="referenceMenuButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="147.0" text="Reference" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <contextMenu>
+                                    <ContextMenu fx:id="referenceMenu" />
+                                 </contextMenu>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </MenuButton>
+                              <CheckBox fx:id="hotelCheck" mnemonicParsing="false" text="Stayed in M/WM Hotel:" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="destinationCheck" mnemonicParsing="false" text="Destination / Interest:" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                              <MenuButton fx:id="destinationMenuButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="152.0" text="Interests" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <contextMenu>
+                                    <ContextMenu fx:id="destinationMenu" />
+                                 </contextMenu>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </MenuButton>
+                              <CheckBox fx:id="repeatCheck" mnemonicParsing="false" text="Has Visited Before:" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="emailCheck" mnemonicParsing="false" text="Subscribed to Emails:" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </GridPane>
+                        <GridPane prefHeight="90.0" prefWidth="449.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="135.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="0.0" prefWidth="11.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="149.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="0.0" prefWidth="14.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="110.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshData" prefHeight="52.0" prefWidth="141.0" text="Refresh Data" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Button>
+                              <Button fx:id="clearButton" mnemonicParsing="false" onAction="#refreshMenus" prefHeight="49.0" prefWidth="133.0" text="Clear Filters" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </FlowPane>
+                  <Label layoutX="24.0" layoutY="33.0" text="Filter Data By">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back_btn" layoutX="24.0" layoutY="903.0" mnemonicParsing="false" onAction="#goBack" prefHeight="61.0" prefWidth="122.0" text="BACK" />
+                  <Button fx:id="emailButton" layoutX="297.0" layoutY="581.0" mnemonicParsing="false" onAction="#ExportEmailAction" prefHeight="69.0" prefWidth="220.0" text="Create Email List">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="importButton" layoutX="24.0" layoutY="581.0" mnemonicParsing="false" onAction="#ImportAction" prefHeight="69.0" prefWidth="220.0" text="Import Data from Excel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exportButton" layoutX="165.0" layoutY="681.0" mnemonicParsing="false" onAction="#ExportAction" prefHeight="69.0" prefWidth="220.0" text="Export Data to Excel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="212.0" layoutY="908.0" mnemonicParsing="false" onAction="#helpButton" prefHeight="39.0" prefWidth="65.0" style="-fx-background-color: #7ec0ee;">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="43.0">
+                           <image>
+                              <Image url="@question.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="885.0" prefWidth="1159.0">
+               <children>
+                  <TabPane layoutX="-2.0" prefHeight="618.0" prefWidth="1340.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Density of Visitors">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="1177.0">
+                                 <children>
+                                    <WebView fx:id="webView" layoutX="2.0" layoutY="-3.0" prefHeight="591.0" prefWidth="1333.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Visitors over Time">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <LineChart fx:id="lineChart" layoutX="14.0" layoutY="14.0" legendVisible="false" prefHeight="482.0" prefWidth="1306.0">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis fx:id="yAxis" side="LEFT" />
+                                      </yAxis>
+                                    </LineChart>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <TableView fx:id="visitorTable" layoutX="15.0" layoutY="625.0" prefHeight="294.0" prefWidth="1306.0" tableMenuButtonVisible="true">
+                     <columns>
+                        <TableColumn fx:id="emailColumn" prefWidth="124.0" text="Email" />
+                        <TableColumn fx:id="metroColumn" prefWidth="131.0" text="Metro Area" />
+                        <TableColumn fx:id="cityColumn" prefWidth="111.0" text="City" />
+                        <TableColumn fx:id="stateColumn" prefWidth="40.0" text="State" />
+                        <TableColumn fx:id="countryColumn" prefWidth="59.0" text="Country" />
+                        <TableColumn fx:id="zipColumn" prefWidth="58.0" text="Zip Code" />
+                        <TableColumn fx:id="partyColumn" prefWidth="83.0" text="# in  Party" />
+                        <TableColumn fx:id="heardColumn" prefWidth="113.0" text="Refererred by" />
+                        <TableColumn fx:id="hotelColumn" prefWidth="141.0" text="Stayed in MWM Hotel" />
+                        <TableColumn fx:id="destinationColumn" prefWidth="132.0" text="Destination" />
+                        <TableColumn fx:id="repeatColumn" prefWidth="90.0" text="Visited Before" />
+                        <TableColumn fx:id="reasonColumn" minWidth="0.0" prefWidth="101.0" text="Reason" />
+                        <TableColumn fx:id="dateColumn" prefWidth="122.0" text="Date of Visit" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="filterCity" layoutX="208.0" layoutY="935.0" prefHeight="41.0" prefWidth="149.0" promptText="City" />
+                  <TextField fx:id="filterCountry" layoutX="527.0" layoutY="936.0" prefHeight="41.0" prefWidth="187.0" promptText="Country" />
+                  <TextField fx:id="filterState" layoutX="368.0" layoutY="936.0" prefHeight="41.0" prefWidth="149.0" promptText="State" />
+                  <Label layoutX="46.0" layoutY="946.0" text="Show only visitors from" />
+                  <Label layoutX="725.0" layoutY="946.0" text="in table" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

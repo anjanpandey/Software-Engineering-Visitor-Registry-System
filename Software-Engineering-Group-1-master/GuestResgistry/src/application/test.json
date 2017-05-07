@@ -1,0 +1,690 @@
+{
+	"results": [
+		{
+			"address_components": [
+				{
+					"long_name": "2501-2699",
+					"short_name": "2501-2699",
+					"types": [
+						"street_number"
+					]
+				},
+				{
+					"long_name": "Griffith Street",
+					"short_name": "Griffith St",
+					"types": [
+						"route"
+					]
+				},
+				{
+					"long_name": "Bayview",
+					"short_name": "Bayview",
+					"types": [
+						"neighborhood",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco",
+					"short_name": "SF",
+					"types": [
+						"locality",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco County",
+					"short_name": "San Francisco County",
+					"types": [
+						"administrative_area_level_2",
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				},
+				{
+					"long_name": "94124",
+					"short_name": "94124",
+					"types": [
+						"postal_code"
+					]
+				}
+			],
+			"formatted_address": "2501-2699 Griffith St, San Francisco, CA 94124, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 37.7187578,
+						"lng": -122.3877006
+					},
+					"southwest": {
+						"lat": 37.7186309,
+						"lng": -122.3878298
+					}
+				},
+				"location": {
+					"lat": 37.7186489,
+					"lng": -122.3877873
+				},
+				"location_type": "RANGE_INTERPOLATED",
+				"viewport": {
+					"northeast": {
+						"lat": 37.7200433302915,
+						"lng": -122.3864162197085
+					},
+					"southwest": {
+						"lat": 37.7173453697085,
+						"lng": -122.3891141802915
+					}
+				}
+			},
+			"place_id": "EjMyNTAxLTI2OTkgR3JpZmZpdGggU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTI0LCBVU0E",
+			"types": [
+				"street_address"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "Gilman Ave & Griffith St",
+					"short_name": "Gilman Ave & Griffith St",
+					"types": [
+						"bus_station",
+						"establishment",
+						"point_of_interest",
+						"transit_station"
+					]
+				},
+				{
+					"long_name": "Bayview",
+					"short_name": "Bayview",
+					"types": [
+						"neighborhood",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco",
+					"short_name": "SF",
+					"types": [
+						"locality",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco County",
+					"short_name": "San Francisco County",
+					"types": [
+						"administrative_area_level_2",
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				},
+				{
+					"long_name": "94124",
+					"short_name": "94124",
+					"types": [
+						"postal_code"
+					]
+				}
+			],
+			"formatted_address": "Gilman Ave & Griffith St, San Francisco, CA 94124, USA",
+			"geometry": {
+				"location": {
+					"lat": 37.718234,
+					"lng": -122.388272
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 37.7195829802915,
+						"lng": -122.3869230197085
+					},
+					"southwest": {
+						"lat": 37.7168850197085,
+						"lng": -122.3896209802915
+					}
+				}
+			},
+			"place_id": "ChIJednkEzt_j4AR1VExCqq-vbA",
+			"types": [
+				"bus_station",
+				"establishment",
+				"point_of_interest",
+				"transit_station"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "Bayview",
+					"short_name": "Bayview",
+					"types": [
+						"neighborhood",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco",
+					"short_name": "SF",
+					"types": [
+						"locality",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco County",
+					"short_name": "San Francisco County",
+					"types": [
+						"administrative_area_level_2",
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "Bayview, San Francisco, CA, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 37.7522488,
+						"lng": -122.3569669
+					},
+					"southwest": {
+						"lat": 37.7083844,
+						"lng": -122.4080732
+					}
+				},
+				"location": {
+					"lat": 37.730416,
+					"lng": -122.384424
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 37.7522488,
+						"lng": -122.3569669
+					},
+					"southwest": {
+						"lat": 37.7083844,
+						"lng": -122.4080732
+					}
+				}
+			},
+			"place_id": "ChIJVTQNsxt_j4ARYEXVGCqV7Mw",
+			"types": [
+				"neighborhood",
+				"political"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "San Francisco",
+					"short_name": "San Francisco",
+					"types": [
+						"locality",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco County",
+					"short_name": "San Francisco County",
+					"types": [
+						"administrative_area_level_2",
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "San Francisco, CA, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 37.9298239,
+						"lng": -122.28178
+					},
+					"southwest": {
+						"lat": 37.6398299,
+						"lng": -123.173825
+					}
+				},
+				"location": {
+					"lat": 37.7749295,
+					"lng": -122.4194155
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 37.812,
+						"lng": -122.3482
+					},
+					"southwest": {
+						"lat": 37.70339999999999,
+						"lng": -122.527
+					}
+				}
+			},
+			"place_id": "ChIJIQBpAG2ahYAR_6128GcTUEo",
+			"types": [
+				"locality",
+				"political"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "94124",
+					"short_name": "94124",
+					"types": [
+						"postal_code"
+					]
+				},
+				{
+					"long_name": "San Francisco",
+					"short_name": "SF",
+					"types": [
+						"locality",
+						"political"
+					]
+				},
+				{
+					"long_name": "San Francisco County",
+					"short_name": "San Francisco County",
+					"types": [
+						"administrative_area_level_2",
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "San Francisco, CA 94124, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 37.7536288,
+						"lng": -122.356879
+					},
+					"southwest": {
+						"lat": 37.708231,
+						"lng": -122.408137
+					}
+				},
+				"location": {
+					"lat": 37.7304167,
+					"lng": -122.384425
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 37.7536288,
+						"lng": -122.356879
+					},
+					"southwest": {
+						"lat": 37.708231,
+						"lng": -122.408137
+					}
+				}
+			},
+			"place_id": "ChIJe7_iURF_j4ARlf3H78H0YTk",
+			"types": [
+				"postal_code"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "San Francisco County",
+					"short_name": "San Francisco County",
+					"types": [
+						"administrative_area_level_2",
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "San Francisco County, CA, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 37.9298239,
+						"lng": -122.28178
+					},
+					"southwest": {
+						"lat": 37.6398299,
+						"lng": -123.173825
+					}
+				},
+				"location": {
+					"lat": 37.7749073,
+					"lng": -122.4193878
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 37.8332484,
+						"lng": -122.3570189
+					},
+					"southwest": {
+						"lat": 37.7080859,
+						"lng": -122.5177237
+					}
+				}
+			},
+			"place_id": "ChIJIQBpAG2ahYARUksNqd0_1h8",
+			"types": [
+				"administrative_area_level_2",
+				"political"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "San Francisco-Oakland-Fremont, CA",
+					"short_name": "San Francisco-Oakland-Fremont, CA",
+					"types": [
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "San Francisco-Oakland-Fremont, CA, CA, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 38.320945,
+						"lng": -121.4692749
+					},
+					"southwest": {
+						"lat": 37.1073458,
+						"lng": -123.024066
+					}
+				},
+				"location": {
+					"lat": 37.8043507,
+					"lng": -121.8107079
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 38.320945,
+						"lng": -121.4692749
+					},
+					"southwest": {
+						"lat": 37.1073458,
+						"lng": -123.024066
+					}
+				}
+			},
+			"place_id": "ChIJGUN8-q6Ij4ARZ1tA_OojshE",
+			"types": [
+				"political"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "San Francisco Metropolitan Area",
+					"short_name": "San Francisco Metropolitan Area",
+					"types": [
+						"political"
+					]
+				},
+				{
+					"long_name": "California",
+					"short_name": "CA",
+					"types": [
+						"administrative_area_level_1",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "San Francisco Metropolitan Area, CA, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 38.320945,
+						"lng": -121.4692139
+					},
+					"southwest": {
+						"lat": 37.0538579,
+						"lng": -123.173825
+					}
+				},
+				"location": {
+					"lat": 37.7749274,
+					"lng": -122.4194254
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 38.320945,
+						"lng": -121.4692139
+					},
+					"southwest": {
+						"lat": 37.0538579,
+						"lng": -123.173825
+					}
+				}
+			},
+			"place_id": "ChIJE156BviCj4ARKrqKa5lkEu4",
+			"types": [
+				"political"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "California",
+					"short_name": "California",
+					"types": [
+						"administrative_area_level_1",
+						"establishment",
+						"point_of_interest",
+						"political"
+					]
+				},
+				{
+					"long_name": "United States",
+					"short_name": "US",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "California, USA",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 42.0095169,
+						"lng": -114.131211
+					},
+					"southwest": {
+						"lat": 32.528832,
+						"lng": -124.482003
+					}
+				},
+				"location": {
+					"lat": 36.778261,
+					"lng": -119.4179324
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 42.009378,
+						"lng": -114.131211
+					},
+					"southwest": {
+						"lat": 32.5342852,
+						"lng": -124.4151821
+					}
+				}
+			},
+			"place_id": "ChIJPV4oX_65j4ARVW8IJ6IJUYs",
+			"types": [
+				"administrative_area_level_1",
+				"establishment",
+				"point_of_interest",
+				"political"
+			]
+		},
+		{
+			"address_components": [
+				{
+					"long_name": "United States",
+					"short_name": "United States",
+					"types": [
+						"country",
+						"political"
+					]
+				}
+			],
+			"formatted_address": "United States",
+			"geometry": {
+				"bounds": {
+					"northeast": {
+						"lat": 71.5388001,
+						"lng": -66.885417
+					},
+					"southwest": {
+						"lat": 18.7763,
+						"lng": 170.5957
+					}
+				},
+				"location": {
+					"lat": 37.09024,
+					"lng": -95.712891
+				},
+				"location_type": "APPROXIMATE",
+				"viewport": {
+					"northeast": {
+						"lat": 49.38,
+						"lng": -66.94
+					},
+					"southwest": {
+						"lat": 25.82,
+						"lng": -124.39
+					}
+				}
+			},
+			"place_id": "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+			"types": [
+				"country",
+				"political"
+			]
+		}
+	],
+	"status": "OK"
+}

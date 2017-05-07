@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2017, 6:04:00 PM
+    Author     : admin
+*/
+
+#mainBody {
+    -fx-background-color: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
+}
+
+#CIty {
+	-fx-background-radius: 3, 2;
+}
+
+#CIty:focused {
+	-fx-faint-focus-color: blue;
+      
+}
+
+#State:focused {
+	-fx-faint-focus-color: blue;
+}
+
+
+#Country:focused{
+ -fx-faint-focus-color: blue;
+
+}
+
+
+#ZipC:focused {
+	-fx-faint-focus-color: blue;
+}
+
+#nxt_btn:hover {
+    -fx-background-color: #a9ff00; 
+}
+
+#home_btn:hover {
+    -fx-background-color:#ffd65b; 
+}
+
+#rightAddress:hover {
+    -fx-background-color: #a9ff00; 
+}
+
+#home_btn {
+	-fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+#nxt_btn {
+	-fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#rightAddress {
+	 -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    
+}
+
+#wrongAddress {
+	-fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+	
+}
+
+#wrongAddress:hover {
+    -fx-background-color: #ffd65b; 
+}
+
+#empty_field {
+    -fx-font-size: 24px;
+}
+
+
+#welcomeLabel {
+     -fx-background-color: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2); 
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+	
+}
+
+#top_begin {
+	 
+	
+}
+
